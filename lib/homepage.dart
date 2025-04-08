@@ -15,27 +15,26 @@ class Homepage extends StatelessWidget{
           )),
         centerTitle:true,
       ),
-      body: Center(
-        child: Container(
-          padding: EdgeInsets.all(50),
-          width:300,
-          height:500,
-          decoration: BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(50),
-              bottomRight: Radius.circular(50))
-          ),
-          alignment: Alignment.bottomRight,
-          child:Text(
-            "Hello World",
-            style: TextStyle(
-              color: Colors.black,
-            ),
-          )
+      body: Padding(
+        padding:EdgeInsets.only(top:8, right:16),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisSize: MainAxisSize.max,
           
-        ),
-      ),
+        
+          children: [
+          Text("This is rorw ",
+          style: TextStyle(
+            fontSize: 28,
+          )),
+          Container(
+            width: 200,
+            height: 200,
+            color: Colors.red,
+          )
+        ],),
+      )
 
     );
   }

@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_2/assignment.dart';
 import 'package:flutter_2/container_container.dart';
+import 'package:flutter_2/day2.dart';
 import 'package:flutter_2/homepage.dart';
+import 'package:flutter_2/images.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +21,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
       debugShowCheckedModeBanner: false,
-      home: MyWidget(),
+      home: Imagess(),
     );
   }
 }
