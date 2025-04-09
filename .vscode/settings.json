@@ -1,3 +1,4 @@
 {
-    "dart.flutterSdkPath": "/Users/milanpoudel/Development/flutter"
+    "dart.flutterSdkPath": "/Users/milanpoudel/Development/flutter",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
