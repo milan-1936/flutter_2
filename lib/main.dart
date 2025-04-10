@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_2/buttons.dart';
 import 'package:flutter_2/counter_app.dart';
+import 'package:flutter_2/sizebox.dart';
 // import 'package:flutter_2/assignment.dart';
 // import 'package:flutter_2/container_container.dart';
 // import 'package:flutter_2/day2.dart';
@@ -22,7 +24,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
       debugShowCheckedModeBanner: false,
-      home: CounterApp(),
+      home: SizeBoxes(),
     );
   }
 }
