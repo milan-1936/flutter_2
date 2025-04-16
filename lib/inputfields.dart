@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
 
-class formWidget extends StatelessWidget {
-  const formWidget({super.key});
+class formWidget extends StatefulWidget {
+   formWidget({super.key});
 
+  final GlobalKey<FormState> _nameFormKey = GlobalKey();
+
+  @override
+  State<formWidget> createState() => _formWidgetState();
+}
+
+class _formWidgetState extends State<formWidget> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -10,6 +17,7 @@ class formWidget extends StatelessWidget {
         title: Text("Form Example"),
       ),
       body: Form(
+        key: GlobalKey(),
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Column(
@@ -23,9 +31,16 @@ class formWidget extends StatelessWidget {
                   labelText: "Name"
                 ),
               ),
+              FilledButton(
+                onPressed: (){
+
+                },
+                child: Text("Submit"),
+              ),
             ],
             ),
         ),
+        
           )
     );
   }
