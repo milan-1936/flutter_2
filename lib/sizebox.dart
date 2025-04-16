@@ -8,7 +8,7 @@ class SizeBoxes extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blue,
-        title: Text("Title ho Size Box kO")
+        title: Text("Title ho Size Box ko")
         ),
         body:SizedBox(
           width: double.infinity,
