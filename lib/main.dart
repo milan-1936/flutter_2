@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_2/booktrip.dart';
 import 'package:flutter_2/hotelui.dart';
 import 'package:flutter_2/inputfields.dart';
+import 'package:flutter_2/navigation/first_screen.dart';
 import 'package:flutter_2/new.dart';
 // import 'package:flutter_2/buttons.dart';
 // import 'package:flutter_2/counter_app.dart';
@@ -25,10 +26,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
       ),
       debugShowCheckedModeBanner: false,
-      home: BookTrip(),
+      home: FirstScreen(),
     );
   }
 }
